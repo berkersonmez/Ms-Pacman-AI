@@ -1,0 +1,14 @@
+C:\School\Pacman\Pacman\Simulator\bin\Debug\Pacman.Simulator.exe
+C:\School\Pacman\Pacman\Simulator\bin\Debug\Pacman.Simulator.pdb
+C:\School\Pacman\Pacman\Simulator\obj\Debug\ResolveAssemblyReference.cache
+C:\School\Pacman\Pacman\Simulator\obj\Debug\Pacman.Simulator.Visualizer.resources
+C:\School\Pacman\Pacman\Simulator\obj\Debug\Simulator.csproj.GenerateResource.Cache
+C:\School\Pacman\Pacman\Simulator\obj\Debug\Pacman.Simulator.exe
+C:\School\Pacman\Pacman\Simulator\obj\Debug\Pacman.Simulator.pdb
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\obj\Debug\Pacman.Simulator.exe
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\obj\Debug\Pacman.Simulator.pdb
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\bin\Debug\Pacman.Simulator.exe
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\bin\Debug\Pacman.Simulator.pdb
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\obj\Debug\Simulator.csprojResolveAssemblyReference.cache
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\obj\Debug\Pacman.Simulator.Visualizer.resources
+D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\Simulator\obj\Debug\Simulator.csproj.GenerateResource.Cache

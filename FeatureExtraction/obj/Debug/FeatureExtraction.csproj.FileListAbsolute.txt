@@ -1,0 +1,8 @@
+C:\School\Pacman\Pacman\FeatureExtraction\bin\Debug\FeatureExtraction.exe
+C:\School\Pacman\Pacman\FeatureExtraction\bin\Debug\FeatureExtraction.pdb
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\ResolveAssemblyReference.cache
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.Properties.Resources.resources
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.csproj.GenerateResource.Cache
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.exe
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.pdb
+C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.Main.resources

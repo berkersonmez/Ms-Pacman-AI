@@ -1,0 +1,9 @@
+C:\School\Pacman\Pacman\ConsoleSim\obj\Debug\ResolveAssemblyReference.cache
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\ConsoleSim.exe
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\ConsoleSim.pdb
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\Pacman.Simulator.exe
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\PacmanAI.dll
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\Pacman.Simulator.pdb
+C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\PacmanAI.pdb
+C:\School\Pacman\Pacman\ConsoleSim\obj\Debug\ConsoleSim.exe
+C:\School\Pacman\Pacman\ConsoleSim\obj\Debug\ConsoleSim.pdb

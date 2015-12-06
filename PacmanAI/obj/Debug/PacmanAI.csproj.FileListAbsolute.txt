@@ -1,0 +1,9 @@
+C:\School\Pacman\Pacman\PacmanAI\obj\Debug\ResolveAssemblyReference.cache
+C:\School\Pacman\Pacman\PacmanAI\bin\Debug\PacmanAI.dll
+C:\School\Pacman\Pacman\PacmanAI\bin\Debug\PacmanAI.pdb
+C:\School\Pacman\Pacman\PacmanAI\bin\Debug\Pacman.Simulator.exe
+C:\School\Pacman\Pacman\PacmanAI\bin\Debug\Pacman.Simulator.pdb
+C:\School\Pacman\Pacman\PacmanAI\obj\Debug\PacmanAI.dll
+C:\School\Pacman\Pacman\PacmanAI\obj\Debug\PacmanAI.pdb
+C:\School\Pacman\Pacman\MsPacmanController\bin\Controllers\PacmanAI.dll
+C:\School\Pacman\Pacman\MsPacmanController\bin\Controllers\PacmanAI.pdb
