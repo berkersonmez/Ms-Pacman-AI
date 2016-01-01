@@ -6,3 +6,11 @@ C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.csproj.Gen
 C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.exe
 C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.pdb
 C:\School\Pacman\Pacman\FeatureExtraction\obj\Debug\FeatureExtraction.Main.resources
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\bin\Debug\FeatureExtraction.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\bin\Debug\FeatureExtraction.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.csprojResolveAssemblyReference.cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.Main.resources
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.Properties.Resources.resources
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.csproj.GenerateResource.Cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\FeatureExtraction\obj\Debug\FeatureExtraction.pdb

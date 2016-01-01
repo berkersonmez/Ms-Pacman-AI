@@ -7,3 +7,12 @@ C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\Pacman.Simulator.pdb
 C:\School\Pacman\Pacman\ConsoleSim\bin\Debug\PacmanAI.pdb
 C:\School\Pacman\Pacman\ConsoleSim\obj\Debug\ConsoleSim.exe
 C:\School\Pacman\Pacman\ConsoleSim\obj\Debug\ConsoleSim.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\ConsoleSim.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\ConsoleSim.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\Pacman.Simulator.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\PacmanAI.dll
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\PacmanAI.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\bin\Debug\Pacman.Simulator.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\obj\Debug\ConsoleSim.csprojResolveAssemblyReference.cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\obj\Debug\ConsoleSim.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\ConsoleSim\obj\Debug\ConsoleSim.pdb

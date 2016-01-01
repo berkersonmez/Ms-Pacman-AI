@@ -27,8 +27,8 @@ namespace MsPacmanController
 		int[] colorValues = new int[224*288];		
 		const int width = 224, height = 288;
 		const int size = width * height;
-		const int red = 0xff0000, blue = 0x00ffff, pink = 0xffb6ff, brown = 0xffb655;
-		const int edibleBlue = 0x2424ff, edibleWhite = 0xdadaff;
+		const int red = 0xff0000, blue = 0x00ffff, pink = 0xffb8ff, brown = 0xffb851;
+		const int edibleBlue = 0x2121ff, edibleWhite = 0xdedeff;
 		const int pacman = 0xffff00;
 		const int black = 0x000000;
 		Visualizer v;		
@@ -104,7 +104,8 @@ namespace MsPacmanController
 
 				// capture frame
 				bitmap = (Bitmap)NativeMethods.GetDesktopBitmap(info.rcClient.Left, info.rcClient.Top, width, height, bitmap);
-				unsafe {
+			    bitmap.Save(@"test.bmp");
+                unsafe {
 					BitmapData bitmapData = bitmap.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.ReadWrite, PixelFormat.Format32bppRgb);
 					IntPtr ptr = bitmapData.Scan0;
 					
@@ -527,7 +528,7 @@ namespace MsPacmanController
 		private Maze findMaze() {
 			int mazeColor = (int)((uint)getColor(5, 25) - 0xFF000000);
 			switch( mazeColor ) {
-				case 0xFFB6AA: return Maze.Red;
+				case 0xFFB8AE: return Maze.Red;
 				case 0x48B6FF: return Maze.LightBlue;
 				case 0xDA9155: return Maze.Brown;
 				case 0x2424FF: return Maze.DarkBlue; // not sure about color

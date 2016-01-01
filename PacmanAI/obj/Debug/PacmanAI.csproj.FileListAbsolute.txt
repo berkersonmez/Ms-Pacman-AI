@@ -7,3 +7,8 @@ C:\School\Pacman\Pacman\PacmanAI\obj\Debug\PacmanAI.dll
 C:\School\Pacman\Pacman\PacmanAI\obj\Debug\PacmanAI.pdb
 C:\School\Pacman\Pacman\MsPacmanController\bin\Controllers\PacmanAI.dll
 C:\School\Pacman\Pacman\MsPacmanController\bin\Controllers\PacmanAI.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Controllers\PacmanAI.dll
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Controllers\PacmanAI.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\PacmanAI\obj\Debug\PacmanAI.dll
+D:\Archive\Projects\Github\Ms-Pacman-AI\PacmanAI\obj\Debug\PacmanAI.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\PacmanAI\obj\Debug\PacmanAI.csprojResolveAssemblyReference.cache

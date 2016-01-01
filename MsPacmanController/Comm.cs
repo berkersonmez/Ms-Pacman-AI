@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
@@ -12,11 +13,11 @@ namespace MsPacmanController
 		public const int COLOR_PILL = 0xDAFFDA;
 		public const int COLOR_PACMAN = 0xFFFF00;
 		public const int COLOR_BLUE = 0x00FFFF;
-		public const int COLOR_BROWN = 0xFFB655;
-		public const int COLOR_PINK = 0xFFB6FF;
+		public const int COLOR_BROWN = 0xFFB851;
+		public const int COLOR_PINK = 0xFFB8FF;
 		public const int COLOR_RED = 0xFF0000;
-		public const int COLOR_EDIBLE = 0x2424FF;
-		public const int COLOR_EDIBLE_WHITE = 0xDADAFF;
+		public const int COLOR_EDIBLE = 0x2121FF;
+		public const int COLOR_EDIBLE_WHITE = 0xDEDEFF;
 
 		[DllImport("user32.dll")]
 		public static extern bool GetWindowInfo(IntPtr hwnd, ref WINDOWINFO pwi);
@@ -39,7 +40,10 @@ namespace MsPacmanController
 		[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
 		public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
 
-		public const byte VK_LEFT = 0x25;  //    LEFT ARROW key
+        [DllImport("user32.dll")]
+        static extern bool PostMessage(IntPtr hWnd, UInt32 Msg, int wParam, int lParam);
+
+        public const byte VK_LEFT = 0x25;  //    LEFT ARROW key
 		public const byte VK_LEFT_SCAN = 0x04B;
 		public const byte VK_UP = 0x26; //     UP ARROW key
 		public const byte VK_UP_SCAN = 0x048;
@@ -56,7 +60,7 @@ namespace MsPacmanController
 		public const uint KEYEVENTF_KEYUP = 0x0002;
 		public const uint KEYEVENTF_SCANCODE = 0x0008;
 
-		public static void AddCredit() {
+        public static void AddCredit() {
 			keybd_event(VK_F2, VK_F2_SCAN, 0, 0);
 			System.Threading.Thread.Sleep(100);
 			keybd_event(VK_F2, VK_F2_SCAN, KEYEVENTF_KEYUP, 0);
@@ -94,27 +98,72 @@ namespace MsPacmanController
 			keybd_event(VK_DOWN, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
 		}
 
+	    public static void SendKeyMsg(int lparam)
+	    {
+            Process[] processes = Process.GetProcessesByName("iexplore");
+
+            foreach (Process proc in processes)
+                PostMessage(proc.MainWindowHandle, 0x0100, lparam, 0);
+        }
+
 		private static Direction lastSentKey = Direction.None;
 		public static void SendKey(Direction key) {
+            
 			if( lastSentKey != Direction.None ) {
 				switch( lastSentKey ) {
-					case Direction.Left: keybd_event(VK_LEFT, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0); break;
-					case Direction.Right: keybd_event(VK_RIGHT, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0); break;
-					case Direction.Up: keybd_event(VK_UP, VK_UP_SCAN, KEYEVENTF_KEYUP, 0); break;
-					case Direction.Down: keybd_event(VK_DOWN, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0); break;
+					case Direction.Left:
+                        keybd_event(VK_LEFT, 0, KEYEVENTF_KEYUP, 0);
+                        keybd_event(0, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0);
+				        SendKeyMsg(VK_LEFT);
+                        SendKeyMsg(VK_LEFT_SCAN);
+                        break;
+					case Direction.Right:
+                        keybd_event(VK_RIGHT, 0, KEYEVENTF_KEYUP, 0);
+                        keybd_event(0, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0);
+                        SendKeyMsg(VK_RIGHT);
+                        SendKeyMsg(VK_RIGHT_SCAN);
+                        break;
+					case Direction.Up:
+                        keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);
+                        keybd_event(0, VK_UP_SCAN, KEYEVENTF_KEYUP, 0);
+                        SendKeyMsg(VK_UP);
+                        SendKeyMsg(VK_UP_SCAN);
+                        break;
+					case Direction.Down:
+                        keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, 0);
+                        keybd_event(0, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
+                        SendKeyMsg(VK_DOWN);
+                        SendKeyMsg(VK_DOWN_SCAN);
+                        break;
 				}
 			} else {
-				keybd_event(VK_LEFT, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0);
-				keybd_event(VK_RIGHT, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0);
-				keybd_event(VK_UP, VK_UP_SCAN, KEYEVENTF_KEYUP, 0);
-				keybd_event(VK_DOWN, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
-			}
+				keybd_event(VK_LEFT, 0, KEYEVENTF_KEYUP, 0);
+                keybd_event(0, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0);
+                keybd_event(VK_RIGHT, 0, KEYEVENTF_KEYUP, 0);
+                keybd_event(0, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0);
+                keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);
+                keybd_event(0, VK_UP_SCAN, KEYEVENTF_KEYUP, 0);
+                keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, 0);
+                keybd_event(0, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
+            }
 			if( key != Direction.None ) {
 				switch( key ) {
-					case Direction.Left: keybd_event(VK_LEFT, VK_LEFT_SCAN, 0, 0); break;
-					case Direction.Right: keybd_event(VK_RIGHT, VK_RIGHT_SCAN, 0, 0); break;
-					case Direction.Up: keybd_event(VK_UP, VK_UP_SCAN, 0, 0); break;
-					case Direction.Down: keybd_event(VK_DOWN, VK_DOWN_SCAN, 0, 0); break;
+					case Direction.Left:
+                        keybd_event(VK_LEFT, 0, 0, 0);
+                        keybd_event(0, VK_LEFT_SCAN, 0, 0);
+                        break;
+					case Direction.Right:
+                        keybd_event(VK_RIGHT, 0, 0, 0);
+                        keybd_event(0, VK_RIGHT_SCAN, 0, 0);
+                        break;
+					case Direction.Up:
+                        keybd_event(VK_UP, 0, 0, 0);
+                        keybd_event(0, VK_UP_SCAN, 0, 0);
+                        break;
+					case Direction.Down:
+                        keybd_event(VK_DOWN, 0, 0, 0);
+                        keybd_event(0, VK_DOWN_SCAN, 0, 0);
+                        break;
 				}
 			}
 			lastSentKey = key;

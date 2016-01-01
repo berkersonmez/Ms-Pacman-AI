@@ -196,7 +196,7 @@ namespace MsPacmanController
 			// set as foreground window
 			try {
 				Comm.ShowWindow(msPacmanProcess.MainWindowHandle, (int)WindowShowStyle.Restore);				
-				Comm.SetWindowPos(msPacmanProcess.MainWindowHandle, (IntPtr)Comm.HWND_TOP, this.Left + this.Width, this.Top, 0, 0, 0);
+				Comm.SetWindowPos(msPacmanProcess.MainWindowHandle, (IntPtr)Comm.HWND_TOP, this.Left + this.Width, this.Top, 240, 327, 0);
 				success(pictureInitFoundGame);
 			} catch {
 				failure(pictureInitFoundGame, "Please make sure Microsoft Ms. Pacman is running");

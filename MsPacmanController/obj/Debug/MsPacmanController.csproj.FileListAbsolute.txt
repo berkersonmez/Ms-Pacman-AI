@@ -46,3 +46,14 @@ D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\MsPacmanControlle
 D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\MsPacmanController\obj\Debug\MsPacmanController.Form1.resources
 D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\MsPacmanController\obj\Debug\MsPacmanController.Properties.Resources.resources
 D:\Archive\Dropbox\Okul\BLG521E-Advanced_AI\Pacmancharp\Pacman\MsPacmanController\obj\Debug\MsPacmanController.csproj.GenerateResource.Cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\MsPacmanController.exe.config
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\MsPacmanController.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\MsPacmanController.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\Pacman.Simulator.exe
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\Pacman.Simulator.pdb
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.csprojResolveAssemblyReference.cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.Form1.resources
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.Properties.Resources.resources
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.csproj.GenerateResource.Cache
