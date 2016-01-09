@@ -19,7 +19,11 @@ namespace MsPacmanController
 		public const int COLOR_EDIBLE = 0x2121FF;
 		public const int COLOR_EDIBLE_WHITE = 0xDEDEFF;
 
-		[DllImport("user32.dll")]
+	    private static VJoyFeeder _vJoyFeeder;
+
+	    public static VJoyFeeder VJoyFeeder => _vJoyFeeder ?? (_vJoyFeeder = new VJoyFeeder());
+
+	    [DllImport("user32.dll")]
 		public static extern bool GetWindowInfo(IntPtr hwnd, ref WINDOWINFO pwi);
 
 		[DllImport("user32.dll")]
@@ -112,57 +116,35 @@ namespace MsPacmanController
 			if( lastSentKey != Direction.None ) {
 				switch( lastSentKey ) {
 					case Direction.Left:
-                        keybd_event(VK_LEFT, 0, KEYEVENTF_KEYUP, 0);
-                        keybd_event(0, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0);
-				        SendKeyMsg(VK_LEFT);
-                        SendKeyMsg(VK_LEFT_SCAN);
+                        VJoyFeeder.Left();
                         break;
 					case Direction.Right:
-                        keybd_event(VK_RIGHT, 0, KEYEVENTF_KEYUP, 0);
-                        keybd_event(0, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0);
-                        SendKeyMsg(VK_RIGHT);
-                        SendKeyMsg(VK_RIGHT_SCAN);
+                        VJoyFeeder.Right();
                         break;
 					case Direction.Up:
-                        keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);
-                        keybd_event(0, VK_UP_SCAN, KEYEVENTF_KEYUP, 0);
-                        SendKeyMsg(VK_UP);
-                        SendKeyMsg(VK_UP_SCAN);
+                        VJoyFeeder.Up();
                         break;
 					case Direction.Down:
-                        keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, 0);
-                        keybd_event(0, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
-                        SendKeyMsg(VK_DOWN);
-                        SendKeyMsg(VK_DOWN_SCAN);
+                        VJoyFeeder.Down();
                         break;
 				}
-			} else {
-				keybd_event(VK_LEFT, 0, KEYEVENTF_KEYUP, 0);
-                keybd_event(0, VK_LEFT_SCAN, KEYEVENTF_KEYUP, 0);
-                keybd_event(VK_RIGHT, 0, KEYEVENTF_KEYUP, 0);
-                keybd_event(0, VK_RIGHT_SCAN, KEYEVENTF_KEYUP, 0);
-                keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);
-                keybd_event(0, VK_UP_SCAN, KEYEVENTF_KEYUP, 0);
-                keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, 0);
-                keybd_event(0, VK_DOWN_SCAN, KEYEVENTF_KEYUP, 0);
+			} else
+            {
+                VJoyFeeder.ResetAxes();
             }
 			if( key != Direction.None ) {
 				switch( key ) {
 					case Direction.Left:
-                        keybd_event(VK_LEFT, 0, 0, 0);
-                        keybd_event(0, VK_LEFT_SCAN, 0, 0);
+                        VJoyFeeder.Left();
                         break;
 					case Direction.Right:
-                        keybd_event(VK_RIGHT, 0, 0, 0);
-                        keybd_event(0, VK_RIGHT_SCAN, 0, 0);
+                        VJoyFeeder.Right();
                         break;
 					case Direction.Up:
-                        keybd_event(VK_UP, 0, 0, 0);
-                        keybd_event(0, VK_UP_SCAN, 0, 0);
+                        VJoyFeeder.Up();
                         break;
 					case Direction.Down:
-                        keybd_event(VK_DOWN, 0, 0, 0);
-                        keybd_event(0, VK_DOWN_SCAN, 0, 0);
+                        VJoyFeeder.Down();
                         break;
 				}
 			}

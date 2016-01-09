@@ -57,3 +57,5 @@ D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanCon
 D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.Form1.resources
 D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.Properties.Resources.resources
 D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\obj\Debug\MsPacmanController.csproj.GenerateResource.Cache
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\vJoyInterfaceWrap.dll
+D:\Archive\Projects\Github\Ms-Pacman-AI\MsPacmanController\bin\Debug\vJoyInterface.dll
