@@ -74,3 +74,16 @@ SmartDijkstraPac		70
 SmartDijkstraPac		170
 SmartDijkstraPac		270
 SmartDijkstraPac		370
+SmartDijkstraPac		70
+SmartDijkstraPac		170
+SmartDijkstraPac		270
+SmartDijkstraPac		370
+SmartDijkstraPac		790
+SmartDijkstraPac		70
+SmartPac		5050
+SmartPac		70
+SmartPac		170
+SmartPac		270
+SmartPac		370
+SmartPac		790
+SmartPac		70

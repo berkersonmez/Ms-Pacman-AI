@@ -19,3 +19,11 @@ D:\Archive\Projects\Github\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.Vis
 D:\Archive\Projects\Github\Ms-Pacman-AI\Simulator\obj\Debug\Simulator.csproj.GenerateResource.Cache
 D:\Archive\Projects\Github\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.exe
 D:\Archive\Projects\Github\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.pdb
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\bin\Debug\Pacman.Simulator.exe.config
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\bin\Debug\Pacman.Simulator.exe
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\bin\Debug\Pacman.Simulator.pdb
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\obj\Debug\Simulator.csprojResolveAssemblyReference.cache
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.Visualizer.resources
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\obj\Debug\Simulator.csproj.GenerateResource.Cache
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.exe
+E:\Archive\Projects\Ms-Pacman-AI\Simulator\obj\Debug\Pacman.Simulator.pdb
