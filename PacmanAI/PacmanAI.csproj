@@ -43,6 +43,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -53,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MonteCarloPac.cs" />
+    <Compile Include="MonteCarlo\Config.cs" />
+    <Compile Include="MonteCarlo\IGame.cs" />
+    <Compile Include="MonteCarlo\Simulation.cs" />
+    <Compile Include="MonteCarlo\Tree.cs" />
     <Compile Include="RandomPac.cs" />
     <Compile Include="SmartDijkstraPac.cs" />
     <Compile Include="SmartPac.cs" />

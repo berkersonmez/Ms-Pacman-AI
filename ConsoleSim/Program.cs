@@ -38,7 +38,7 @@ namespace PacmanAI
 
 			// DEFINE CONTROLLER //
 			//BasePacman controller = new TestPac();
-			BasePacman controller = new SmartPac();
+			BasePacman controller = new SmartDijkstraPac();
 			//BasePacman controller = new SmartDijkstraPac();
 			gs.Controller = controller;
 
